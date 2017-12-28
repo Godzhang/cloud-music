@@ -10,19 +10,16 @@
 			<router-link to="/userSec" class="fa fa-user"></router-link>
 		</div>
 		<div class="search-btn">
-			<i class="fa fa-search"></i>
-		</div>	
+			<router-link to="/search">
+				<i class="fa fa-search"></i>
+			</router-link>
+		</div>
     </div>
-
-    <div class="wrap-cover" v-show="navFlag" @click="hideNav"></div>
 
     <div class="content">
     	<router-view></router-view>
     </div>
-		<transition name="nav-slide">
-			<aside-nav v-show="navFlag"></aside-nav>
-		</transition>
-    
+	<aside-nav :navShow="isNavShow" @close-nav="closeNav"></aside-nav>    
   </div>
 </template>
 
@@ -35,16 +32,15 @@ export default {
 	},
   data () {
     return {
-      isShowCover: false,
-      navFlag: false
+      isNavShow: false
     }
   },
   methods: {
   	showNav(){
-  		this.navFlag = true;
+  		this.isNavShow = true;
   	},
-  	hideNav(){
-  		this.navFlag = false;
+  	closeNav(){
+  		this.isNavShow = false;
   	}
   }
 }
@@ -95,18 +91,5 @@ export default {
 		color: #fff;
 	}
 }
-.wrap-cover{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0,0,0,.8);
-}
-.nav-slide-enter-active, .nav-slide-leave-active{
-	transition: all .5s;
-}
-.nav-slide-enter, .nav-slide-leave-to{
-	transform: translateX(-300px);
-}
+
 </style>

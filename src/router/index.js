@@ -4,6 +4,7 @@ import IndexPage from '@/pages/index'
 import MainSection from '@/components/mainSection'
 import LocalSection from '@/components/localSection'
 import UserSection from '@/components/userSection'
+import searchPage from '@/pages/search'
 
 Vue.use(Router)
 
@@ -28,6 +29,10 @@ export default new Router({
       		component: UserSection
       	}
       ]
+    },
+    {
+      path: '/search',
+      component: searchPage
     }
   ]
 })
