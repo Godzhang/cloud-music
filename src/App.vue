@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <div class="container">
+      <router-view></router-view>
+    </div>    
     <playbar></playbar>
   </div>
 </template>
@@ -21,5 +23,13 @@ export default {
 html, body, #app{
   width: 100%;
   height: 100%;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.container{
+  width: 100vw;
+  height: 92vh;
+  background: #f0f4f7;
 }
 </style>

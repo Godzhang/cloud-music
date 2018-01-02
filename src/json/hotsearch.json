@@ -12,6 +12,13 @@
 			{"first":"广东十年爱情故事","second":1},
 			{"first":"醉赤壁","second":1},
 			{"first":"Shape Of You","second":1}
+		],
+		"historys": [
+			{"first":"we will rock you","second":1},
+			{"first":"friends will be friends","second":1},
+			{"first":"don't stop me now","second":1},
+			{"first":"love kills","second":1},
+			{"first":"spread your wings","second":1}
 		]
 	}
 }

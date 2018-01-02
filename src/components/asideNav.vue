@@ -105,9 +105,6 @@ export default {
 </script>
 <style scoped lang="scss">
 .mt5{margin-top: 5px;}
-::-webkit-scrollbar{
-	display: none;
-}
 .wh{
 	position: absolute;
 	top: 0;

@@ -4,7 +4,11 @@ import IndexPage from '@/pages/index'
 import MainSection from '@/components/mainSection'
 import LocalSection from '@/components/localSection'
 import UserSection from '@/components/userSection'
-import searchPage from '@/pages/search'
+import SearchPage from '@/pages/search'
+import Singercategory from '@/pages/singercategory'
+import Music from '@/components/music'
+import MusicVideo from '@/components/musicVideo'
+import Radio from '@/components/radio'
 
 Vue.use(Router)
 
@@ -18,7 +22,22 @@ export default new Router({
       children: [
       	{
       		path: 'mainSec',
-      		component: MainSection
+      		component: MainSection,
+          redirect: '/mainSec/music',
+          children: [
+            {
+              path: 'music',
+              component: Music
+            },
+            {
+              path: 'video',
+              component: MusicVideo
+            },
+            {
+              path: 'radio',
+              component: Radio
+            }
+          ]
       	},
       	{
       		path: 'localSec',
@@ -32,7 +51,11 @@ export default new Router({
     },
     {
       path: '/search',
-      component: searchPage
+      component: SearchPage
+    },
+    {
+      path: '/singercategory',
+      component: Singercategory
     }
   ]
 })

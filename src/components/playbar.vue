@@ -1,6 +1,6 @@
 <template>
 	<div class="playbar">
-		
+		playbar
 	</div>
 </template>
 <script>
@@ -15,6 +15,8 @@ export default {
 	bottom: 0;
 	width: 100%;
 	height: 8vh;
-	background: #000;
+	line-height: 8vh;
+	text-align: center;
+	background: #fff;
 }
 </style>
