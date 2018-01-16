@@ -1,6 +1,6 @@
 <template>
 	<div class="music-video-part">
-		music-video
+		video
 	</div>
 </template>
 <script>

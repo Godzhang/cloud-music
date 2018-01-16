@@ -7,7 +7,7 @@ import UserSection from '@/components/userSection'
 import SearchPage from '@/pages/search'
 import Singercategory from '@/pages/singercategory'
 import Music from '@/components/music'
-import MusicVideo from '@/components/musicVideo'
+import MusicVideo from '@/components/video'
 import Radio from '@/components/radio'
 
 Vue.use(Router)
