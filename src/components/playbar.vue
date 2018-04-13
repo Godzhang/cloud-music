@@ -13,9 +13,10 @@ export default {
 	position: fixed;
 	left: 0;
 	bottom: 0;
+	z-index: 1000;
 	width: 100%;
-	height: 8vh;
-	line-height: 8vh;
+	height: pm(55px);
+	line-height: pm(55px);
 	text-align: center;
 	background: #fff;
 }

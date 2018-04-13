@@ -38,3 +38,14 @@ img{display: block;}
 .pos_rel{position: relative;}
 .pos_abs{position: absolute;}
 .cover{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #fff;opacity: 0;filter: alpha(opacity=0);}
+
+/*方法*/
+@function pm($px){
+	$rem: 37.5px;
+	@return ($px / $rem) + rem;
+}
+
+
+
+
+

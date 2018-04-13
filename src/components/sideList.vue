@@ -2,7 +2,7 @@
 	<div class="nav-item">
 		<i class="fa" :class="'fa-' + side_iconclass"></i>
 		<span>{{side_sidetitle}}</span>
-		<em v-show="!!side_desc">{{side_desc}}</em>
+		<em v-if="!!side_desc">{{side_desc}}</em>
 	</div>
 </template>
 <script>
@@ -32,20 +32,20 @@ export default {
 </script>
 <style scoped lang="scss">
 .nav-item{
-	height: 6.6vh;
-	line-height: 6.6vh;
+	height: pm(44px);
+	line-height: pm(44px);
 	background: #fff;
-	padding: 0 10px;
-	font-size: 14px;
+	padding: 0 pm(10px);
+	font-size: pm(14px);
 	cursor: pointer;
 	i{
-		margin-right: 10px;
-		font-size: 16px;
+		margin-right: pm(10px);
+		font-size: pm(16px);
 		color: #999;
 	}
 	em{
 		float: right;
-		font-size: 12px;
+		font-size: pm(12px);
 		color: #666;
 	}
 }

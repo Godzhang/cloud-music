@@ -19,7 +19,7 @@
     <div class="content">
     	<router-view></router-view>
     </div>
-	<aside-nav :navShow="isNavShow" @close-nav="closeNav"></aside-nav>    
+	<aside-nav :navShow="isNavShow" @close-nav="closeNav"></aside-nav>
   </div>
 </template>
 

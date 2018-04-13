@@ -6,7 +6,7 @@ export default {
 	props: {
 		height: {
 			type: String,
-			default: '1vh'
+			default: '5px'
 		},
 		background: {
 			type: String,
